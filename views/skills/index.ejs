@@ -1,13 +1,13 @@
 <%- include('../partials/header') %>
 
-    <h1>Alina's Software Developer Skills as of <%= time %></h1>
-    <a href="/skills/new">Add a skill</a>
+    <h1 class="text-success-emphasis p-3">Alina's Software Developer Skills as of <%= time %></h1>
+    <a class="text-success-emphasis p-3" href="/skills/new">Add a skill</a>
     <ul>
       <% skills.forEach(function(skill) { %>
         <li>
           <form action="/skills/<%= skill.id %>?_method=DELETE"
             class="delete-form" method="POST">
-            <button type="submit">x</button>
+            <button class="text-danger-emphasis" type="submit">x</button>
           </form>
             <a href="/skills/<%= skill.id %>">
                 <%= skill.skill %>

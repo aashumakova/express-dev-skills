@@ -31,6 +31,7 @@ function deleteOne(id) {
     skills.splice(idx, 1)
 }
 
+
 module.exports = {
     getAll,
     getOne,

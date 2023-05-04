@@ -1,11 +1,11 @@
 <%- include('../partials/header') %>
-    <h3>
+    <h3 class="p-3">
         <%= skill.skill %>
     </h3>
 
-    <h3>
+    <h3 class="p-3">
         Complete: <%= skill.done ? 'yes' : 'no' %>
     </h3>
-    <a href="/skills/<%= skill.id %>/edit">Edit skills</a>
+    <a class="text-success p-3" href="/skills/<%= skill.id %>/edit">Edit skills</a>
 
 <%- include('../partials/footer') %>
